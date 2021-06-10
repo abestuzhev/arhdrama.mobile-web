@@ -205,6 +205,11 @@ body.lock {
         overflow: hidden;
     }
 
+    .l-ticket-month::after {
+        content: '';
+        z-index: 10;
+    }
+
 }
 
 @media (max-width:1130px) {
