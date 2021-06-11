@@ -2,6 +2,30 @@
     display: none;
 }
 
+.header-menu__mobile-footer {
+    display: none;
+    padding: 16px 20px;
+}
+
+.header-menu__mobile-footer .c-rating-services,
+.header-menu__mobile-footer .donation,
+.header-menu__mobile-footer .c-version {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    right: auto;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-menu__mobile-footer .c-rating-services::before,
+.header-menu__mobile-footer .c-version::before {
+    display: none;
+}
+
 body.lock {
     overflow: hidden;
 }
@@ -408,11 +432,12 @@ body.lock {
         transition: all .2s ease-in-out;
     }
 
-    .header-menu_list {
-        /*display: none;*/
+    .header-menu__wrapper {
         height: 100%;
         overflow-y: auto;
         border-top: 1px solid #ccc;
+    }
+    .header-menu_list {
     }
 
     .header-menu__layout-mobile.is-show {
@@ -545,6 +570,10 @@ body.lock {
 
     .video-list__item {
         width: 50%;
+    }
+
+    .header-menu__mobile-footer {
+        display: block;
     }
 
 }
